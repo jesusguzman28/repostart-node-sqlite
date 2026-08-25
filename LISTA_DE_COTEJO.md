@@ -2,7 +2,7 @@
 
 | Criterio | Puntaje |
 |---|---:|
-| Trabaja en la rama asignada y no en `main` | 2 |
+| Trabaja individualmente en su rama y no en `main` | 2 |
 | Registra versiones de Node.js, npm y nombre de la rama | 2 |
 | Presenta el comando, mensaje y código de salida inicial | 3 |
 | Adjunta una captura legible del fallo inicial | 2 |

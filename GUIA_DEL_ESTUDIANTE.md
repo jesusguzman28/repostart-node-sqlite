@@ -7,13 +7,13 @@ git clone https://github.com/jesusguzman28/repostart-node-sqlite.git
 cd repostart-node-sqlite
 ```
 
-## 2. Crear la rama del equipo
+## 2. Crear tu rama individual
 
 ```bash
-git switch -c equipo-01
+git switch -c estudiante-perez-ana
 ```
 
-Reemplaza `01` por el número de tu equipo. No trabajes directamente en `main`.
+Reemplaza `perez-ana` por tus apellidos y nombres. Utiliza minúsculas, guiones y no emplees espacios ni tildes. No trabajes directamente en `main`.
 
 ## 3. Preparar el proyecto
 
@@ -64,7 +64,7 @@ $LASTEXITCODE
 Toma una captura donde se observe el mensaje del fallo y guárdala como:
 
 ```text
-capturas/equipo-01-fallo.png
+capturas/perez-ana-fallo.png
 ```
 
 Antes de continuar, escribe en el reporte por qué consideras que el producto es conforme o no conforme.
@@ -89,25 +89,25 @@ http://localhost:3000/salud
 Guarda la captura como:
 
 ```text
-capturas/equipo-01-resultado.png
+capturas/perez-ana-resultado.png
 ```
 
 Detén el servidor con `Ctrl + C`.
 
 ## 8. Preparar el reporte
 
-Copia la plantilla y cambia `01` por tu número:
+Copia la plantilla y cambia el nombre del ejemplo por tus apellidos y nombres:
 
 macOS o Linux:
 
 ```bash
-cp evidencias/PLANTILLA_INFORME.md REPORTE_EQUIPO_01.md
+cp evidencias/PLANTILLA_INFORME.md REPORTE_PEREZ_ANA.md
 ```
 
 Windows PowerShell:
 
 ```powershell
-Copy-Item evidencias/PLANTILLA_INFORME.md REPORTE_EQUIPO_01.md
+Copy-Item evidencias/PLANTILLA_INFORME.md REPORTE_PEREZ_ANA.md
 ```
 
 Completa todos los campos del reporte.
@@ -115,9 +115,9 @@ Completa todos los campos del reporte.
 ## 9. Subir la rama
 
 ```bash
-git add REPORTE_EQUIPO_01.md capturas/
-git commit -m "docs: agregar diagnóstico del equipo 01"
-git push -u origin equipo-01
+git add REPORTE_PEREZ_ANA.md capturas/
+git commit -m "docs: agregar diagnóstico de Ana Pérez"
+git push -u origin estudiante-perez-ana
 ```
 
 No subas `.env`, `node_modules` ni la base de datos generada.
@@ -126,15 +126,16 @@ No subas `.env`, `node_modules` ni la base de datos generada.
 
 Envía al docente:
 
-- Nombre del equipo.
-- Integrantes.
+- Apellidos y nombres.
+- Código del estudiante.
 - Nombre de la rama.
 - Enlace de la rama en GitHub.
 
 Ejemplo:
 
 ```text
-Equipo: Equipo 01
-Rama: equipo-01
-Enlace: https://github.com/jesusguzman28/repostart-node-sqlite/tree/equipo-01
+Estudiante: Pérez Ramos, Ana
+Código: 20260001
+Rama: estudiante-perez-ana
+Enlace: https://github.com/jesusguzman28/repostart-node-sqlite/tree/estudiante-perez-ana
 ```

@@ -1,10 +1,10 @@
-# Reporte de diagnóstico — Equipo XX
+# Reporte individual de diagnóstico — RepoStart
 
-## 1. Integrantes
+## 1. Datos del estudiante
 
-- Nombre completo:
-- Nombre completo:
-- Nombre completo:
+- Apellidos y nombres:
+- Código del estudiante:
+- Programa y periodo:
 
 ## 2. Entorno utilizado
 
@@ -34,13 +34,13 @@ Copiar aquí el mensaje principal del error.
 
 ### Captura
 
-![Fallo inicial](capturas/equipo-XX-fallo.png)
+![Fallo inicial](capturas/apellido-nombre-fallo.png)
 
 ## 4. Acción aplicada
 
 - Comando o cambio realizado:
 - ¿Qué hizo esta acción?:
-- ¿Por qué el equipo eligió esta acción?:
+- ¿Por qué elegiste esta acción?:
 
 ## 5. Resultado final
 
@@ -51,7 +51,7 @@ Copiar aquí el mensaje principal del error.
 
 ### Captura
 
-![Resultado final](capturas/equipo-XX-resultado.png)
+![Resultado final](capturas/apellido-nombre-resultado.png)
 
 ## 6. Conclusión
 

@@ -11,21 +11,21 @@ Proyecto de la Sesión de Aprendizaje N.° 01. El reto consiste en ejecutar una 
 
 ## Entrega de la primera sesión
 
-Cada equipo trabajará en una rama propia. No debe modificar ni subir cambios directamente a `main`.
+Cada estudiante trabajará individualmente en una rama propia. No debe modificar ni subir cambios directamente a `main`.
 
 El entregable será:
 
-- Una rama llamada `equipo-XX`.
-- Un reporte corto llamado `REPORTE_EQUIPO_XX.md`.
+- Una rama llamada `estudiante-apellido-nombre`.
+- Un reporte corto llamado `REPORTE_APELLIDO_NOMBRE.md`.
 - Una captura del fallo inicial.
 - Una captura del resultado final.
 
-Ejemplo del Equipo 01:
+Ejemplo para la estudiante Ana Pérez:
 
 ```text
-REPORTE_EQUIPO_01.md
-capturas/equipo-01-fallo.png
-capturas/equipo-01-resultado.png
+REPORTE_PEREZ_ANA.md
+capturas/perez-ana-fallo.png
+capturas/perez-ana-resultado.png
 ```
 
 ## Inicio rápido
@@ -33,12 +33,12 @@ capturas/equipo-01-resultado.png
 ```bash
 git clone https://github.com/jesusguzman28/repostart-node-sqlite.git
 cd repostart-node-sqlite
-git switch -c equipo-01
+git switch -c estudiante-perez-ana
 cp .env.example .env
 npm install
 ```
 
-Cambia `01` por el número asignado a tu equipo.
+Cambia `perez-ana` por tus apellidos y nombres, usando minúsculas, guiones y sin espacios ni tildes.
 
 Continúa con la [guía del estudiante](GUIA_DEL_ESTUDIANTE.md). El formato que deben completar se encuentra en [evidencias/PLANTILLA_INFORME.md](evidencias/PLANTILLA_INFORME.md).
 
@@ -49,4 +49,4 @@ El producto queda conforme cuando:
 - La aplicación inicia sin errores.
 - `npm run diagnostico` termina con código 0.
 - `http://localhost:3000/salud` responde con estado `OK`.
-- El equipo presenta evidencias del antes y el después.
+- El estudiante presenta evidencias del antes y el después.
