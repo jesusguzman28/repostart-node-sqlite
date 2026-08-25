@@ -1,48 +1,52 @@
-# RepoStart: diagnóstico de calidad
+# RepoStart: diagnóstico inicial de calidad
 
-Mini-API de incidencias preparada para la Sesión de Aprendizaje N.° 01. El repositorio representa un producto recibido de otro equipo que debe evaluarse en un entorno limpio.
+Proyecto de la Sesión de Aprendizaje N.° 01. El reto consiste en ejecutar una aplicación recibida, registrar su fallo inicial, aplicar una corrección y demostrar el resultado final.
 
 ## Requisitos
 
-- Node.js 22.5 o superior (SQLite integrado)
+- Node.js 22.5 o superior
 - npm
-- Terminal con `curl` o un cliente HTTP equivalente
+- Git
+- Navegador web
 
-## Instalación y primera ejecución
+## Entrega de la primera sesión
+
+Cada equipo trabajará en una rama propia. No debe modificar ni subir cambios directamente a `main`.
+
+El entregable será:
+
+- Una rama llamada `equipo-XX`.
+- Un reporte corto llamado `REPORTE_EQUIPO_XX.md`.
+- Una captura del fallo inicial.
+- Una captura del resultado final.
+
+Ejemplo del Equipo 01:
+
+```text
+REPORTE_EQUIPO_01.md
+capturas/equipo-01-fallo.png
+capturas/equipo-01-resultado.png
+```
+
+## Inicio rápido
 
 ```bash
+git clone https://github.com/jesusguzman28/repostart-node-sqlite.git
+cd repostart-node-sqlite
+git switch -c equipo-01
 cp .env.example .env
 npm install
-npm start
-echo $?
 ```
 
-Registra la salida completa antes de efectuar cambios. También está disponible un comando de comprobación acotado:
+Cambia `01` por el número asignado a tu equipo.
 
-```bash
-npm run diagnostico
-echo $?
-```
-
-El equipo debe investigar el repositorio, identificar la causa raíz, proponer una acción técnica y justificarla antes de modificar el estado del entorno. La corrección no se proporciona en esta guía.
+Continúa con la [guía del estudiante](GUIA_DEL_ESTUDIANTE.md). El formato que deben completar se encuentra en [evidencias/PLANTILLA_INFORME.md](evidencias/PLANTILLA_INFORME.md).
 
 ## Criterio de aceptación
 
-El producto es conforme cuando:
+El producto queda conforme cuando:
 
-- `npm start` mantiene el servicio activo sin errores de arranque.
-- `/salud` responde HTTP 200.
-- `/incidencias` responde HTTP 200 y un arreglo JSON.
+- La aplicación inicia sin errores.
 - `npm run diagnostico` termina con código 0.
-- Es posible crear una incidencia mediante `POST /incidencias`.
-- Un segundo equipo reproduce el resultado desde el commit y las instrucciones registradas.
-
-## Material de trabajo
-
-- [Guía del estudiante](GUIA_DEL_ESTUDIANTE.md)
-- [Lista de cotejo](LISTA_DE_COTEJO.md)
-- [Plantilla del informe](evidencias/PLANTILLA_INFORME.md)
-
-## Alcance académico
-
-El proyecto es deliberadamente pequeño. No representa una arquitectura de producción ni incluye autenticación. Su propósito es evaluar reproducibilidad, trazabilidad, evidencia e interpretación técnica.
+- `http://localhost:3000/salud` responde con estado `OK`.
+- El equipo presenta evidencias del antes y el después.

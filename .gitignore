@@ -5,4 +5,6 @@ data/*.db-*
 evidencias/*
 !evidencias/.gitkeep
 !evidencias/PLANTILLA_INFORME.md
+!capturas/
+!capturas/.gitkeep
 SOLUCION_DOCENTE/

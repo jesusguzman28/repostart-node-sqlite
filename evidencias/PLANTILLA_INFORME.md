@@ -1,84 +1,58 @@
-# Informe de reproducción — RepoStart
+# Reporte de diagnóstico — Equipo XX
 
-## 1. Identificación
+## 1. Integrantes
 
-- Equipo e integrantes:
-- Fecha y hora:
-- Revisor independiente:
-- URL del repositorio:
-- Commit recibido (`git rev-parse HEAD`):
-- Commit posterior a la intervención:
+- Nombre completo:
+- Nombre completo:
+- Nombre completo:
 
-## 2. Inventario del entorno
+## 2. Entorno utilizado
 
-| Elemento | Valor | Comando o fuente |
-|---|---|---|
-| Sistema operativo | | |
-| Arquitectura | | |
-| Node.js | | |
-| npm | | |
-| Ruta de trabajo | | |
-| `PATH` relevante | | |
-| Variables de aplicación | | |
-| Puerto y proceso | | |
+- Sistema operativo:
+- Versión de Node.js:
+- Versión de npm:
+- Fecha:
+- Nombre de la rama:
 
-No registres contraseñas, tokens ni otros secretos.
+## 3. Fallo inicial
 
-## 3. Procedimiento desde un clon limpio
-
-Enumera los pasos exactos. Incluye comandos, entradas, orden de ejecución y condiciones previas.
-
-## 4. Comando mínimo reproducible
+### Comando ejecutado
 
 ```text
-COMANDO_AQUÍ
+Escribir aquí el comando.
 ```
 
-- Salida relevante:
+### Mensaje encontrado
+
+```text
+Copiar aquí el mensaje principal del error.
+```
+
 - Código de salida:
-- Duración aproximada:
-- Resultado esperado:
-- Resultado observado:
+- Decisión inicial: conforme / no conforme
+- ¿Por qué no pudo iniciar correctamente?:
 
-## 5. Hallazgo y causa raíz
+### Captura
 
-- Hallazgo:
-- Impacto para el usuario o negocio:
-- Evidencia que sostiene la causa:
-- Causa raíz (no copies solamente el mensaje de error):
+![Fallo inicial](capturas/equipo-XX-fallo.png)
 
-## 6. Decisión inicial
+## 4. Acción aplicada
 
-- Clasificación: conforme / parcialmente conforme / no conforme
-- Criterio incumplido:
-- Justificación técnica:
+- Comando o cambio realizado:
+- ¿Qué hizo esta acción?:
+- ¿Por qué el equipo eligió esta acción?:
 
-## 7. Acción técnica priorizada
+## 5. Resultado final
 
-- Acción propuesta:
-- Prioridad y justificación:
-- Cambio o comando aplicado:
-- Riesgos o efectos secundarios:
+- Resultado de `npm run diagnostico`:
+- Código de salida final:
+- Resultado mostrado en `/salud`:
+- Decisión final: conforme / parcialmente conforme / no conforme
 
-## 8. Verificación posterior
+### Captura
 
-| Comprobación | Antes | Después | ¿Cumple? |
-|---|---|---|---|
-| Arranque | | | |
-| Diagnóstico | | | |
-| `/salud` | | | |
-| `/incidencias` | | | |
-| Registro de incidencia | | | |
+![Resultado final](capturas/equipo-XX-resultado.png)
 
-## 9. Reproducción independiente
+## 6. Conclusión
 
-- Nombre del equipo revisor:
-- Commit utilizado:
-- ¿Reprodujo el fallo inicial?:
-- ¿Reprodujo la verificación posterior?:
-- Diferencias encontradas:
-- Firma o conformidad del revisor:
-
-## 10. Conclusión
-
-Decisión final y una recomendación técnica transferible a otro proyecto o stack.
+Explica en cuatro o cinco líneas qué problema encontraron, cómo lo corrigieron y cómo comprobaron que la aplicación funciona.

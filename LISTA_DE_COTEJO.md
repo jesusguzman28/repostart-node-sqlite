@@ -1,29 +1,16 @@
-# Lista de cotejo — Sesión N.° 01
+# Lista de cotejo simplificada — Primera sesión
 
-## Ejecución práctica (8 puntos)
+| Criterio | Puntaje |
+|---|---:|
+| Trabaja en la rama asignada y no en `main` | 2 |
+| Registra versiones de Node.js, npm y nombre de la rama | 2 |
+| Presenta el comando, mensaje y código de salida inicial | 3 |
+| Adjunta una captura legible del fallo inicial | 2 |
+| Explica brevemente la causa del problema | 3 |
+| Registra y explica la acción aplicada | 2 |
+| Presenta diagnóstico final y `/salud` funcionando | 2 |
+| Adjunta una captura legible del resultado final | 2 |
+| Redacta una conclusión clara | 1 |
+| Sube el reporte y las capturas a su rama | 1 |
 
-| Criterio | Puntaje | Evidencia esperada |
-|---|---:|---|
-| Entorno | 2 | Runtime, SDK/npm, `PATH`, variables, puerto y proceso |
-| Procedimiento | 2 | Clon limpio, pasos completos y comando mínimo |
-| Medición | 2 | Logs, respuesta HTTP, duración y código de salida |
-| Repetibilidad | 2 | Commit exacto y reproducción por otro equipo |
-
-## Informe (8 puntos)
-
-| Criterio | Puntaje | Evidencia esperada |
-|---|---:|---|
-| Corrección | 3 | Hallazgo y causa raíz técnicamente válidos |
-| Evidencia | 2 | Comandos, logs y comparación antes/después |
-| Trazabilidad | 2 | Commits, entorno y revisor identificados |
-| Claridad | 1 | Informe ordenado, preciso y sin secretos |
-
-## Sustentación (4 puntos)
-
-| Criterio | Puntaje | Evidencia esperada |
-|---|---:|---|
-| Interpretación | 2 | Relaciona evidencia con criterio de calidad |
-| Decisión | 1 | Defiende conforme, parcial o no conforme |
-| Respuesta técnica | 1 | Responde preguntas y transfiere el aprendizaje |
-
-**Puntaje total: 20 puntos.**
+**Total: 20 puntos.**
