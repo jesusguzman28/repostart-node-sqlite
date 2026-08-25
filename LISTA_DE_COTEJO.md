@@ -8,7 +8,7 @@
 | Adjunta una captura legible del fallo inicial | 2 |
 | Explica brevemente la causa del problema | 3 |
 | Registra y explica la acción aplicada | 2 |
-| Presenta diagnóstico final y `/salud` funcionando | 2 |
+| Presenta diagnóstico final, `/salud` y tres incidencias | 2 |
 | Adjunta una captura legible del resultado final | 2 |
 | Redacta una conclusión clara | 1 |
 | Sube el reporte y las capturas a su rama | 1 |

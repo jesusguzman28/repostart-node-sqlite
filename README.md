@@ -49,4 +49,5 @@ El producto queda conforme cuando:
 - La aplicación inicia sin errores.
 - `npm run diagnostico` termina con código 0.
 - `http://localhost:3000/salud` responde con estado `OK`.
+- `http://localhost:3000/incidencias` muestra tres registros iniciales.
 - El estudiante presenta evidencias del antes y el después.

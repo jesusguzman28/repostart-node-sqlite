@@ -47,6 +47,8 @@ Copiar aquí el mensaje principal del error.
 - Resultado de `npm run diagnostico`:
 - Código de salida final:
 - Resultado mostrado en `/salud`:
+- Cantidad de registros mostrados en `/incidencias`:
+- Títulos de las incidencias encontradas:
 - Decisión final: conforme / parcialmente conforme / no conforme
 
 ### Captura

@@ -80,11 +80,14 @@ npm run diagnostico
 npm start
 ```
 
-Cuando la aplicación permanezca activa, abre en el navegador:
+Cuando la aplicación permanezca activa, abre en el navegador las dos direcciones:
 
 ```text
 http://localhost:3000/salud
+http://localhost:3000/incidencias
 ```
+
+La segunda dirección debe mostrar tres incidencias de ejemplo. La captura final debe mostrar esos registros.
 
 Guarda la captura como:
 
