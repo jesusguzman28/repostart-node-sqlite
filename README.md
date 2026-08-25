@@ -1,45 +1,47 @@
 # RepoStart: diagnóstico de calidad
 
-Mini-API de incidencias preparada para la Sesión de Aprendizaje N.° 01. El repositorio se entrega con una condición no conforme reproducible: la aplicación abre, pero la tabla requerida no está creada.
+Mini-API de incidencias preparada para la Sesión de Aprendizaje N.° 01. El repositorio representa un producto recibido de otro equipo que debe evaluarse en un entorno limpio.
 
 ## Requisitos
 
 - Node.js 22.5 o superior (SQLite integrado)
 - npm
-- Terminal con `curl` (o un cliente HTTP equivalente)
+- Terminal con `curl` o un cliente HTTP equivalente
 
-## Instalación y ejecución
+## Instalación y primera ejecución
 
 ```bash
 cp .env.example .env
 npm install
 npm start
+echo $?
 ```
 
-En otra terminal:
-
-```bash
-curl -i http://localhost:3000/salud
-curl -i http://localhost:3000/incidencias
-```
-
-La primera ruta debe responder `200`. La segunda debe responder `500` mientras la base no esté inicializada. Para obtener un comando mínimo con código de salida determinista:
+Registra la salida completa antes de efectuar cambios. También está disponible un comando de comprobación acotado:
 
 ```bash
 npm run diagnostico
 echo $?
 ```
 
-No ejecutes `npm run db:init` hasta haber registrado el fallo y sus evidencias.
+El equipo debe investigar el repositorio, identificar la causa raíz, proponer una acción técnica y justificarla antes de modificar el estado del entorno. La corrección no se proporciona en esta guía.
 
 ## Criterio de aceptación
 
 El producto es conforme cuando:
 
+- `npm start` mantiene el servicio activo sin errores de arranque.
 - `/salud` responde HTTP 200.
 - `/incidencias` responde HTTP 200 y un arreglo JSON.
 - `npm run diagnostico` termina con código 0.
 - Es posible crear una incidencia mediante `POST /incidencias`.
+- Un segundo equipo reproduce el resultado desde el commit y las instrucciones registradas.
+
+## Material de trabajo
+
+- [Guía del estudiante](GUIA_DEL_ESTUDIANTE.md)
+- [Lista de cotejo](LISTA_DE_COTEJO.md)
+- [Plantilla del informe](evidencias/PLANTILLA_INFORME.md)
 
 ## Alcance académico
 

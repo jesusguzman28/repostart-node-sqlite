@@ -4,4 +4,5 @@ data/*.db
 data/*.db-*
 evidencias/*
 !evidencias/.gitkeep
+!evidencias/PLANTILLA_INFORME.md
 SOLUCION_DOCENTE/

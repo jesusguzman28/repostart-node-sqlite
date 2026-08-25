@@ -16,4 +16,16 @@ function run(sql, params = []) {
   return { id: Number(result.lastInsertRowid), changes: Number(result.changes) };
 }
 
-module.exports = { db, all, run };
+function verifySchema() {
+  const table = db.prepare(
+    "SELECT name FROM sqlite_master WHERE type = 'table' AND name = 'incidencias'"
+  ).get();
+
+  if (!table) {
+    const error = new Error('Esquema de base de datos no disponible: falta la tabla incidencias');
+    error.code = 'DB_SCHEMA_MISSING';
+    throw error;
+  }
+}
+
+module.exports = { db, all, run, verifySchema };

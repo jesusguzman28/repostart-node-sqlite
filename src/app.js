@@ -1,6 +1,6 @@
 const express = require('express');
 const { port, databasePath } = require('./config');
-const { all, run } = require('./database');
+const { all, run, verifySchema, db } = require('./database');
 
 const app = express();
 app.use(express.json());
@@ -39,7 +39,21 @@ app.post('/incidencias', async (request, response) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`RepoStart escuchando en http://localhost:${port}`);
-  console.log(`Base de datos: ${databasePath}`);
-});
+function start() {
+  try {
+    verifySchema();
+  } catch (error) {
+    console.error(`[FALLO DE ARRANQUE] ${error.code || 'ERROR'}: ${error.message}`);
+    console.error(`Entorno: node=${process.version} plataforma=${process.platform} puerto=${port}`);
+    db.close();
+    process.exitCode = 1;
+    return;
+  }
+
+  app.listen(port, () => {
+    console.log(`RepoStart escuchando en http://localhost:${port}`);
+    console.log(`Base de datos: ${databasePath}`);
+  });
+}
+
+start();
