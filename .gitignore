@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/*.db
+data/*.db-*
+evidencias/*
+!evidencias/.gitkeep
+SOLUCION_DOCENTE/
